@@ -7,7 +7,7 @@ env = gym.make("CartPole-v1", render_mode="rgb_array")
 obs, _ = env.reset(seed=123)
 
 total_reward = 0
-for _ in range(500):
+for i in range(500):
     env.render()
     
     if obs[2] + obs[3] > 0:
